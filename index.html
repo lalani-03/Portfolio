@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lalani | Portfolio</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+<!-- ===== Navbar ===== -->
+<header class="navbar">
+  <div class="logo">Lalani<span>Maithri</span></div>
+
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+    <button class="menu-btn" id="menuBtn" onclick="toggleMenu()" >☰</button>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home">
+  <div class="hero-text">
+    <h1>Hello, I’m <span class="typing-wrap"></span><span class="typing">Lalani Maithri</span></span></h1>
+    <p class="role">Biomedical | Electronics | IoT Enthusiast</p>
+    <a href="#work" class="btn">Download CV</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="images/profile.png" alt="Profile Image">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p style="max-width:700px;margin:auto;">
+    I am a Biomedical Engineering student with a strong interest in electronics, 
+    medical devices, and IoT-based healthcare solutions. 
+    I enjoy working at the intersection of engineering and healthcare, 
+    where technology can improve patient monitoring, diagnostics, and treatment systems.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/html-5.png">
+      <h3>Bio Medical</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/arduino.png">
+      <h3>Arduino & IoT</h3>
+      <p>Sensors, automation systems</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/heart-with-pulse.png">
+      <h3>Biomedical</h3>
+      <p>EMG, EEG, medical instrumentation</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <h2>My Work</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Smart Home System</h3>
+      <p>IoT-based monitoring using sensors</p>
+    </div>
+
+    <div class="card">
+      <h3>EMG Measurement</h3>
+      <p>Muscle signal acquisition & analysis</p>
+    </div>
+
+    <div class="card">
+      <h3>EEG Analysis</h3>
+      <p>Brain signal study & interpretation</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div style="max-width:400px;margin:auto;">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</section>
+
+<footer>
+  © 2025 Lalani Maithri Rathnayaka
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
